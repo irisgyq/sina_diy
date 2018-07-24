@@ -24,7 +24,7 @@ class InformationItem(Item):
     Educational_Experience = Field() #教育经历
     Num_Tweets = Field() #微博数
     Num_Follows = Field() #关注数
-    Num_Fans = Filed() #粉丝数
+    Num_Fans = Field() #粉丝数
 
 class TweetsItem(Item):
 	"""微博信息"""
@@ -34,15 +34,15 @@ class TweetsItem(Item):
 	Is_URL = Field() #包含的链接
 	Is_Image = Field() #包含图片的数量
 	Is_Vedio = Field() #是否包含视频
-	Transfer_From = Filed() #原微博的用户
+	Transfer_From = Field() #原微博的用户
 	KeyWord = Field() #搜索关键字，通过这个关键字搜索出微博的话题
 	UId = Field() #用户id
 	WContent = Field() #微博内容
 	PubtiME = Field() #发布时间
 	Tools = Field() #使用的设备
 	Like = Field() #点赞数
-    Comment = Field() #评论数
-    Transfer = Field() #转发数
+	Comment = Field() #评论数
+	Transfer = Field() #转发数
 
 class CommentsItem(Item):
 	"""评论信息"""
